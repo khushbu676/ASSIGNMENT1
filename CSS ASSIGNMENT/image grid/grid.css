@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    height: 95vh;
+    gap: 20px;
+}
+
+.nav {
+    background-color: black;
+    padding-top: 10px;
+}
+
+.nav1 a {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.show {
+    display: none;
+}
+
+.show a {
+    color: white;
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show:hover .hide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+}
+.one {
+    border: solid 2px black;
+}
+
+#one11 {
+    grid-column: span 4;
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#one12 {
+    grid-column: span 2;
+    background-image: url(2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#one13 {
+    grid-row: span 4;
+    padding: 10px;
+    background-color: black;
+}
+
+#one14 {
+    background-image: url(3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#one15 {
+    grid-column: span 4;
+    background-image: url(4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#one16 {
+
+    background-image: url(5.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#one17 {
+    grid-column: span 3;
+    background-image: url(7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#one18 {
+    grid-column: span 3;
+    background-image: url(6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#one19 {
+    grid-column: span 2;
+    background-image: url(11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#one20 {
+    grid-column: span 2;
+    background-image: url(8.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#one21 {
+    grid-column: span 2;
+    background-image: url(9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+h3 {
+    color: white;
+    text-align: end;
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+
+a {
+    color: white;
+}
+
+#hvr {
+    position: fixed;
+    right: 20px;
+}
+
+@media screen and (max-width : 767px) {
+    
+    .main {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        height: 500vh;
+        overflow: hidden;
+    }
+
+    .one {
+        border: 2px solid black;
+    }
+
+    #one11,
+    #one12,
+    #one14,
+    #one15,
+    #one16,
+    #one17,
+    #one18,
+    #one19,
+    #one20,
+    #one21 {
+        grid-column: span 1;
+    }
+
+    #one11, #one18, #one20{
+        background-position: 80%;
+    }
+    #one13 {
+        grid-row: span 1/1;
+        background-color: black;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .show {
+        display: block;
+        margin-top: 20px;
+        margin-left: 250px;
+    }
+
+    .show:hover .hide {
+        color: white;
+        text-decoration: none;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+
+    a:hover {
+        color: yellow;
+    }
+
+    #hvr {
+        position: sticky;
+        left: 297px;
+    }
+}

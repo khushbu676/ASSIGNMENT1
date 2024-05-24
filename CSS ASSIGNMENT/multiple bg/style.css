@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .left-side {
+    flex: 1;
+    background-color: black; /* Background color for the left side */
+    display: flex;
+    align-items: left;
+  }
+  .round{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 4px solid gray;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 610px;
+    top: 180px;
+  }
+  .round1{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 4px solid gray;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 610px;
+    top: 312px;
+  }
+  .round2{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 4px solid gray;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 610px;
+    top: 445px;
+  }
+  
+  .right-side {
+    flex: 1;
+    background-image: url('leftimage.png'); /* Background image for the right side */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+   
+  }
+  .content{
+    position: relative;
+    text-align: end;
+    margin-left: 300px;
+    margin-top: 80px;
+  }
+  .box{
+    height: 50px;
+    width: 300px;
+    border-right: 4px solid orangered;
+  }
+  h1{
+    padding: 8px;
+    color: WHITE;
+    text-align: left;
+}
+h3{
+    
+    
+    font-size: 15px;
+   color: #e74c3c;
+    font-weight: 600;
+    font-family: "Open Sans";
+    text-align: left;
+    margin-left: 180px;
+ 
+}
+p{
+
+font-size: 14px;
+line-height: 19px;
+color: #999999;
+font-weight: 400;
+font-family: "Source Sans Pro";
+text-align: right;
+margin-left: -50px;
+
+}
+.button{
+    position: absolute;
+   }
+   .btn1{
+    position: absolute;
+    left: 625px;
+    top: 200px;
+   
+   }
+   .btn2{
+    position: absolute;
+    left: 625px;
+    top: 330px;
+   }
+.btn3{
+    position: absolute;
+    left: 625px;
+    top: 460px;
+   }
+   /* .mainbox{
+        height: 50px;
+        width: 50px;
+        border: 1px solid white;
+        border-radius: 50%;
+        position: absolute;
+       
+        background-color: transparent;
+
+   } */

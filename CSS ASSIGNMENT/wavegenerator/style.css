@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    background-image: url(background.png);
+   background-size: cover;
+   background-position: center;
+  
+    }
+    p{
+        color: white;
+        text-align: center;
+    }
+   .team_list h4, 
+ .team_list p {
+   visibility: hidden;
+ }
+ .team_list img:hover .team_list h4,
+ .team_list img:hover .team_list p {
+   visibility: visible;
+}
+
+
+.our_team_bg:after {
+   content: '';
+   position: absolute;
+   background-color: #202020;
+   width: 100%;
+   height: 100%;
+   top: 0%;
+   left: 0%;
+   opacity: .75;
+   z-index: -1;
+}
+
+.our_team_top h2,
+.our_team_top p {
+   color: #fff;
+}
+
+
+
+.team_list img {
+   border-radius: 50%;
+   border: 4px solid #e74c3c;
+   z-index: 1;
+  width: 40px;
+  height: 40px;
+}
+
+.team_list {
+   max-width: 1170px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.team_list span:nth-child(1) {
+   position: absolute;
+   bottom: 67px;
+   left: 150px;
+}
+
+.team_list span:nth-child(2) {
+   position: absolute;
+   bottom: 150px;
+   left: 360px;
+}
+
+.team_list span:nth-child(2) h4:after {
+   top: 52%;
+}
+
+.team_list span:nth-child(3) 
+{
+   position: absolute;
+   bottom: 23px;
+   left: 800px;
+}
+
+.team_list span:nth-child(4) {
+   position: absolute;
+   bottom: 68px;
+   left: 600px;
+}
+
+.team_list span:nth-child(5) {
+   position: absolute;
+   bottom: 105px;
+   right: 140px;
+}
+
+.team_list h4:after {
+   position: absolute;
+   background: #675b5b;
+   width: 50px;
+   height: 1px;
+   display: block;
+   content: '';
+   transform: rotate(90deg);
+   top: 44%;
+   left: 28%;
+}
+.wave{
+   min-height: 100vh;
+   width: 100%;
+ 
+}
+svg{
+   position: absolute;
+   bottom: 0;
+  
+   
+}
+
+.team_list h4 {
+   font-size: 15px;
+   margin-top: 80px;
+   color: #e74c3c;
+   font-weight: 600;
+   font-family: 'Open Sans', sans-serif;
+}
+
+.team_list p {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 500;
+}
+
+.content{
+   font-family: sans-serif;
+   text-align: center;
+   padding: 90px;
+}
+.team_list h4, 
+.team_list p {
+   visibility: hidden;
+}
+
+.team_list img:hover {
+  opacity: 0.5;  
+  background-color: orangered;
+  transform: scale(1.5);
+}
+.team_list img:hover ~ h4,
+.team_list img:hover ~ p {
+   visibility: visible;
+   
+   
+}
+h2{
+  color: white;
+text-align: center;
+
+}
